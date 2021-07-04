@@ -29,7 +29,8 @@ const handleEquals = (e) => {
     else if(op === "-")result = Number(firstNum) - Number(secondNum);
     else if(op === "*")result = Number(firstNum) * Number(secondNum);
     else if(op === "/")result = Number(firstNum) / Number(secondNum);
-    secondNum = 0;
+    firstNum = String(result);
+    secondNum = "";
     showResult.innerText = result;
 }
 equals.addEventListener('click', handleEquals);
